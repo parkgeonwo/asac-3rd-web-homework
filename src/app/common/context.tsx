@@ -23,7 +23,6 @@
 // export const GlobalContextProvider = ({ children })=>{
 //   const [displayModal, setDisplayModal] = useState('none');
 //   const [modalContent, setModalContent] = useState('');
-//   const [modalDisplayReducer, setModaldisplayReducer] = useReducer(modalReducer, 'none');
   
 //   return(
 //     <GlobalContext.Provider value={{displayModal, setDisplayModal, modalContent, setModalContent}}>
@@ -47,9 +46,7 @@ type Action =
   | { type: 'HIDDEN'; text:string };
 
 type ModalDispatch = Dispatch<Action>;
-const ModalDispatchContext = createContext<ModalDispatch | undefined>(
-  undefined
-);
+const ModalDispatchContext = createContext<ModalDispatch | undefined>( undefined );
 
 function modalReducer(state: string, action: Action): string{
   switch (action.type) {
