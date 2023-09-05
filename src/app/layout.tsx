@@ -22,6 +22,12 @@ export default function RootLayout({
           <div>
             <Link href='login'>Login</Link>
           </div>
+          <div>
+            <Link href='jd'>JD</Link>
+          </div>
+          <div>
+            <Link href='search'>Search</Link>
+          </div>
         </div>
         <TodosContextProvider>
           {children}

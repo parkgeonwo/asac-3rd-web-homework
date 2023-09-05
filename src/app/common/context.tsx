@@ -1,3 +1,4 @@
+
 'use client';
 
 // import React, { useState, createContext, Dispatch, SetStateAction, useContext, useReducer } from 'react'
@@ -35,7 +36,7 @@
 
 
 
-import React, { useReducer, createContext, Dispatch, useContext } from 'react'
+import React, { useReducer, createContext, Dispatch, useContext, ReactNode } from 'react'
 
 
 // 나중에 다른 컴포넌트에서 타입을 불러와서 쓸 수 있도록 내보내겠습니다.
@@ -60,7 +61,11 @@ function modalReducer(state: string, action: Action): string{
 }
 
 
-export const TodosContextProvider = ({ children })=>{
+interface Props{
+  children : ReactNode;
+}
+
+export const TodosContextProvider = ({ children } : Props )=>{
   const [modalDisplayReducer, setModaldisplayReducer] = useReducer(modalReducer, 'none');
   
   return(

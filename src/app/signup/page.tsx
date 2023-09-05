@@ -1,8 +1,9 @@
+/* eslint-disable */
 'use client'
 import React, { useEffect, useRef, useState } from 'react';
 import './signup.css';
 import Modal from '../common/modal';
-import { useModalState, useSetModalState } from '../common/context';
+import {  useSetModalState } from '../common/context';
 // import { useGlobalContext } from '../common/context';
 
 export default function Pages(){
