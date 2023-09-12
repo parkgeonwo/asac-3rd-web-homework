@@ -5,6 +5,8 @@ import './signup.css';
 import Modal from '../common/modal';
 import {  useSetModalState } from '../common/context';
 // import { useGlobalContext } from '../common/context';
+import { collection, addDoc } from 'firebase/firestore';
+import {db} from '../firebase'
 
 export default function Pages(){
 
@@ -17,7 +19,7 @@ export default function Pages(){
   const [passwordText, setPasswordText] = useState('비밀번호를 올바르게 써주세요');
 
   // copt 쓴거 저장하기
-  const [postInfo, setPostInfo] = useState({id:"", password:"", email:""});
+  const [postInfo, setPostInfo] = useState({email:"", password:""});
 
   // email 정규식 검증 + input 적은 내용 저장
   const EmailInputChange =(e : React.ChangeEvent<HTMLInputElement> )=>{
@@ -65,15 +67,28 @@ export default function Pages(){
   const passwordInputRef = useRef<HTMLInputElement>(null);
 
 
+
   // 회원가입 버튼
-  const SighUpBtn = () => {
+  const SighUpBtn = async() => {
+
+
     // 이메일 검사
     const regExp=/([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
     if (postInfo.email.match(regExp) != null) {  // 정규식을 만족했을때
       // 패스워드 검사
       const regExp2 = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}$/;
       if (postInfo.password.match(regExp2) != null) {  // 정규식을 만족했을때
-        alert('회원가입 완료!')
+        
+        await addDoc(collection(db, 'users'),{
+          email : postInfo.email,
+          password : postInfo.password
+        }).then(()=>{
+          setPostInfo({email:"", password:""});
+          alert('회원가입 완료!')
+        }).catch((err)=>{
+          console.log(err);
+        })
+
       }
       else { // 정규식을 만족하지 않았을때
         passwordInputRef.current?.focus();
@@ -102,6 +117,11 @@ export default function Pages(){
 
   const dispatch = useSetModalState();
 
+
+  // add item db
+  const additem = async(e)=>{
+    e.prevemtDefault();
+  }
 
 
   return(

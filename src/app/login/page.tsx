@@ -1,11 +1,11 @@
 /* eslint-disable */
 'use client'
 import './login.css';
-
 import { useForm } from "react-hook-form";
+import { collection, getDoc, doc, query } from 'firebase/firestore';
+import {db, firestore} from '../firebase'
 
 export default function Pages(){
-
 
   return(
     <div className='login-main-back'>
@@ -28,8 +28,23 @@ interface HookFormTypes {
 const HookForm = () => {
   const { register, handleSubmit, formState: {errors} } = useForm<HookFormTypes>();
   
-  const onValid = (data: HookFormTypes) => {
-    console.log(data);
+  const onValid = async(data: HookFormTypes) => {
+
+    firestore.collection('users').where('email', '==', data.email ).get().then((result)=>{
+      if(result.empty==true){   // 가입한 아아디가 없으면
+        alert('회원가입해주세요');
+        return
+      } else{  // 가입한 아이디가 있으면
+        result.forEach((doc)=>{
+          if(doc.data().password === data.password){
+            alert('로그인 되었습니다')
+          } else{
+            alert('비밀번호가 틀렸습니다.')
+          }
+        })
+      }
+    })
+
     
   };
 

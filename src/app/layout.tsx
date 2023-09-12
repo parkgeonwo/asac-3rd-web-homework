@@ -20,13 +20,16 @@ export default function RootLayout({
             <Link href='/signup'>SignUp</Link>
           </div>
           <div>
-            <Link href='login'>Login</Link>
+            <Link href='/login'>Login</Link>
           </div>
           <div>
-            <Link href='jd'>JD</Link>
+            <Link href='/jd'>JD</Link>
           </div>
           <div>
-            <Link href='search'>Search</Link>
+            <Link href={{
+            pathname: '/search',
+            query: { category : 'all' },
+          }}>Search</Link>
           </div>
         </div>
         <TodosContextProvider>
