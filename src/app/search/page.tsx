@@ -1,5 +1,6 @@
 'use client';
 
+import './search.css';
 import { useEffect, useState } from 'react';
 import datas from './js.json';
 import {  useSearchParams } from 'next/navigation';
@@ -50,11 +51,11 @@ export default function SearchPage(  ) {
             프론트앤드
         </Link>
       </div>
-      <div className="flex">
+      <div className="search-data-back">
         {
           dataState.map(( data,index )=>{
             return(
-              <div key={index} className='w-1/4 mr-3'>
+              <div key={index} className=''>
                 <img src={data.image}/> 
                 <div>{data.title}</div>
               </div>

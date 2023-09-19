@@ -2,19 +2,17 @@
 'use client'
 import './login.css';
 import { useForm } from "react-hook-form";
-import { collection, getDoc, doc, query } from 'firebase/firestore';
-import {db, firestore} from '../firebase'
+import {firestore} from '../firebase'
+import {useSession, signIn, signOut} from "next-auth/react"
 
 export default function Pages(){
-
+  const { data : session } = useSession();
+  
   return(
     <div className='login-main-back'>
       <div className='login-title-text'>로그인</div>
       <HookForm />
-      {/* <input className="info-input login-input" placeholder='이메일' name='email'  />
-      <input className="info-input login-input" placeholder='패스워드' name='password' />
-
-      <button className='login-btn' >로그인하기</button> */}
+      <button className='google-login-btn' onClick={()=>{signIn();}}>구글 로그인</button>
     </div>
   )
 }

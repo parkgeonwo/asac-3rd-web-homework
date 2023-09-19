@@ -1,3 +1,4 @@
+import AuthContext from '@/context/AuthContext'
 import { TodosContextProvider } from './common/context'
 import './globals.css'
 //import ResponsiveAppBar from "./common/appbar"
@@ -11,35 +12,37 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <div className='main-header-back'>
-          <div>
-            <Link href='/'>Home</Link>
+      <AuthContext>
+        <body>
+          <div className='main-header-back'>
+            <div>
+              <Link href='/'>Home</Link>
+            </div>
+            <div>
+              <Link href='/signup'>SignUp</Link>
+            </div>
+            <div>
+              <Link href='/login'>Login</Link>
+            </div>
+            <div>
+              <Link href='/jd'>JD</Link>
+            </div>
+            <div>
+              <Link href={{
+              pathname: '/search',
+              query: { category : 'all' },
+            }}>Search</Link>
+            </div>
           </div>
-          <div>
-            <Link href='/signup'>SignUp</Link>
-          </div>
-          <div>
-            <Link href='/login'>Login</Link>
-          </div>
-          <div>
-            <Link href='/jd'>JD</Link>
-          </div>
-          <div>
-            <Link href={{
-            pathname: '/search',
-            query: { category : 'all' },
-          }}>Search</Link>
-          </div>
-        </div>
-        <TodosContextProvider>
-          {children}
-        </TodosContextProvider>
-        {/* <GlobalContextProvider>
-          {children}
-        </GlobalContextProvider> */}
+          <TodosContextProvider>
+            {children}
+          </TodosContextProvider>
+          {/* <GlobalContextProvider>
+            {children}
+          </GlobalContextProvider> */}
 
-      </body>
+        </body>
+      </AuthContext>
     </html>
   )
 }

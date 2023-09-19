@@ -1,7 +1,7 @@
 [
 	{
 	 "id": 123,
-	 "title": "무신사",
+	 "title": "무신사", 
    "job":"Data Analyst (고객파트너프로덕트실)",
    "des":"무신사는 패션 시장의 판도를 바꾸며 빠르게 성장하는 패션 버티컬 서비스 기업입니다. 사람들이 자신의 취향에 맞는 개성을 찾을 수 있도록 다양한 패션 스타일을 제시하고, 국내외 패션 브랜드가 더욱 매력적으로 보일 수 있도록 브랜드 정체성과 상품 가치를 멋지고 흥미롭게 소개합니다. 또한 누구나 시간과 장소에 구애 받지 않고 패션 브랜드를 즐길 수 있도록 데이터와 기술을 활용한 개인화된 쇼핑 경험으로 제공하며 패션 비즈니스의 혁신을 만들고 있습니다.",
 	 "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4248%2Fg2c7y5q9xilzijcy__1080_790.jpg&w=1000&q=75",
@@ -22,7 +22,79 @@
    "des":"좋은 사람들과 재미있게 일하고, 함께 성장하는 그런 팀에서 일할 수 없을까 ? 똑똑한개발자는 개발자와 디자이너가 즐겁게 일하고 자유롭게 성장하는 IT 기업문화를 만들기 위해 탐구해나가고 있습니다.",
 	 "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F30151%2F6mfyitmlun7t7hcz__1080_790.jpg&w=1000&q=75",
    "category":"front-end"
-  }
+  },
+  {
+    "id": 123,
+    "title": "무신사", 
+    "job":"Data Analyst (고객파트너프로덕트실)",
+    "des":"무신사는 패션 시장의 판도를 바꾸며 빠르게 성장하는 패션 버티컬 서비스 기업입니다. 사람들이 자신의 취향에 맞는 개성을 찾을 수 있도록 다양한 패션 스타일을 제시하고, 국내외 패션 브랜드가 더욱 매력적으로 보일 수 있도록 브랜드 정체성과 상품 가치를 멋지고 흥미롭게 소개합니다. 또한 누구나 시간과 장소에 구애 받지 않고 패션 브랜드를 즐길 수 있도록 데이터와 기술을 활용한 개인화된 쇼핑 경험으로 제공하며 패션 비즈니스의 혁신을 만들고 있습니다.",
+    "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4248%2Fg2c7y5q9xilzijcy__1080_790.jpg&w=1000&q=75",
+    "category":"data"
+   },
+   {
+    "id": 456,
+    "title": "비즈데이터",
+    "job":"개발직군(Python 등)",
+    "des":"비즈데이터는 데이터 컴퓨팅, 인공지능 실행, 실행 인터페이스 기술 기반의 자율운영 솔루션(AI) 전문기업 입니다. 도전해보지 않은 새로운 방향의 확장과 기존 사업의 고도화와 전문화를 위해 참신한 생각을 가진 인재를 모집하고 있습니다. 멈춰있기 보다는 앞으로 뚜벅뚜벅 걸어가는 것을 좋아하고, 사람들과 나누고 소통하는 분을 기다리고 있습니다",
+    "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29924%2Fncb6vsxmjvo0rnjt__1080_790.jpg&w=1000&q=75",
+    "category":"data"
+   },
+   {
+    "id": 789,
+    "title": "똑똑한개발자",
+    "job":"React(Next.js) 웹 프론트엔드 개발자(플러그팀)",
+    "des":"좋은 사람들과 재미있게 일하고, 함께 성장하는 그런 팀에서 일할 수 없을까 ? 똑똑한개발자는 개발자와 디자이너가 즐겁게 일하고 자유롭게 성장하는 IT 기업문화를 만들기 위해 탐구해나가고 있습니다.",
+    "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F30151%2F6mfyitmlun7t7hcz__1080_790.jpg&w=1000&q=75",
+    "category":"front-end"
+   },
+   {
+    "id": 123,
+    "title": "무신사", 
+    "job":"Data Analyst (고객파트너프로덕트실)",
+    "des":"무신사는 패션 시장의 판도를 바꾸며 빠르게 성장하는 패션 버티컬 서비스 기업입니다. 사람들이 자신의 취향에 맞는 개성을 찾을 수 있도록 다양한 패션 스타일을 제시하고, 국내외 패션 브랜드가 더욱 매력적으로 보일 수 있도록 브랜드 정체성과 상품 가치를 멋지고 흥미롭게 소개합니다. 또한 누구나 시간과 장소에 구애 받지 않고 패션 브랜드를 즐길 수 있도록 데이터와 기술을 활용한 개인화된 쇼핑 경험으로 제공하며 패션 비즈니스의 혁신을 만들고 있습니다.",
+    "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4248%2Fg2c7y5q9xilzijcy__1080_790.jpg&w=1000&q=75",
+    "category":"data"
+   },
+   {
+    "id": 456,
+    "title": "비즈데이터",
+    "job":"개발직군(Python 등)",
+    "des":"비즈데이터는 데이터 컴퓨팅, 인공지능 실행, 실행 인터페이스 기술 기반의 자율운영 솔루션(AI) 전문기업 입니다. 도전해보지 않은 새로운 방향의 확장과 기존 사업의 고도화와 전문화를 위해 참신한 생각을 가진 인재를 모집하고 있습니다. 멈춰있기 보다는 앞으로 뚜벅뚜벅 걸어가는 것을 좋아하고, 사람들과 나누고 소통하는 분을 기다리고 있습니다",
+    "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29924%2Fncb6vsxmjvo0rnjt__1080_790.jpg&w=1000&q=75",
+    "category":"data"
+   },
+   {
+    "id": 789,
+    "title": "똑똑한개발자",
+    "job":"React(Next.js) 웹 프론트엔드 개발자(플러그팀)",
+    "des":"좋은 사람들과 재미있게 일하고, 함께 성장하는 그런 팀에서 일할 수 없을까 ? 똑똑한개발자는 개발자와 디자이너가 즐겁게 일하고 자유롭게 성장하는 IT 기업문화를 만들기 위해 탐구해나가고 있습니다.",
+    "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F30151%2F6mfyitmlun7t7hcz__1080_790.jpg&w=1000&q=75",
+    "category":"front-end"
+   },
+   {
+    "id": 123,
+    "title": "무신사", 
+    "job":"Data Analyst (고객파트너프로덕트실)",
+    "des":"무신사는 패션 시장의 판도를 바꾸며 빠르게 성장하는 패션 버티컬 서비스 기업입니다. 사람들이 자신의 취향에 맞는 개성을 찾을 수 있도록 다양한 패션 스타일을 제시하고, 국내외 패션 브랜드가 더욱 매력적으로 보일 수 있도록 브랜드 정체성과 상품 가치를 멋지고 흥미롭게 소개합니다. 또한 누구나 시간과 장소에 구애 받지 않고 패션 브랜드를 즐길 수 있도록 데이터와 기술을 활용한 개인화된 쇼핑 경험으로 제공하며 패션 비즈니스의 혁신을 만들고 있습니다.",
+    "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4248%2Fg2c7y5q9xilzijcy__1080_790.jpg&w=1000&q=75",
+    "category":"data"
+   },
+   {
+    "id": 456,
+    "title": "비즈데이터",
+    "job":"개발직군(Python 등)",
+    "des":"비즈데이터는 데이터 컴퓨팅, 인공지능 실행, 실행 인터페이스 기술 기반의 자율운영 솔루션(AI) 전문기업 입니다. 도전해보지 않은 새로운 방향의 확장과 기존 사업의 고도화와 전문화를 위해 참신한 생각을 가진 인재를 모집하고 있습니다. 멈춰있기 보다는 앞으로 뚜벅뚜벅 걸어가는 것을 좋아하고, 사람들과 나누고 소통하는 분을 기다리고 있습니다",
+    "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29924%2Fncb6vsxmjvo0rnjt__1080_790.jpg&w=1000&q=75",
+    "category":"data"
+   },
+   {
+    "id": 789,
+    "title": "똑똑한개발자",
+    "job":"React(Next.js) 웹 프론트엔드 개발자(플러그팀)",
+    "des":"좋은 사람들과 재미있게 일하고, 함께 성장하는 그런 팀에서 일할 수 없을까 ? 똑똑한개발자는 개발자와 디자이너가 즐겁게 일하고 자유롭게 성장하는 IT 기업문화를 만들기 위해 탐구해나가고 있습니다.",
+    "image": "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F30151%2F6mfyitmlun7t7hcz__1080_790.jpg&w=1000&q=75",
+    "category":"front-end"
+   }
 ]
 
 
